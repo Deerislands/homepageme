@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { FadeInSection } from '@/components/FadeInSection';
 
 type HeroData = {
@@ -48,17 +49,25 @@ export function HeroSection({ data }: HeroSectionProps) {
             </div>
 
             <div className="relative">
-              <div className="card-surface mx-auto max-w-md overflow-hidden p-6 sm:p-8">
-                <div className="rounded-[2rem] bg-gradient-to-br from-sky-100 via-white to-slate-100 p-6">
-                  <div className="flex aspect-[4/5] items-center justify-center rounded-[1.75rem] border border-white/80 bg-gradient-to-br from-slate-900 to-sky-700 text-center text-white shadow-soft">
-                    <div>
-                      <p className="text-sm tracking-[0.3em] text-sky-100">個人簡介</p>
-                      <p className="mt-4 text-5xl font-bold">KK</p>
-                      <p className="mt-3 text-base text-sky-100">個人形象圖示意區</p>
-                      <p className="mt-6 text-sm leading-7 text-sky-50">
-                        聚焦資訊管理、資料應用與系統支援
-                      </p>
+              <div className="card-surface mx-auto max-w-md overflow-hidden p-4 sm:p-5">
+                <div className="rounded-[2rem] bg-gradient-to-br from-sky-100 via-white to-slate-100 p-4">
+                  <div className="overflow-hidden rounded-[1.75rem] border border-white/80 bg-white shadow-soft">
+                    <div className="relative aspect-[4/5] w-full">
+                      <Image
+                        src="/profile.jpg"
+                        alt="鹿島浩市的個人照片"
+                        fill
+                        priority
+                        className="object-cover"
+                      />
                     </div>
+                  </div>
+
+                  <div className="mt-4 px-2 pb-2">
+                    <p className="text-sm font-semibold tracking-[0.2em] text-sky-700">個人形象</p>
+                    <p className="mt-2 text-sm leading-7 text-slate-600">
+                      以穩定累積資訊管理、系統支援與資料應用能力為目前學習重點。
+                    </p>
                   </div>
                 </div>
               </div>
