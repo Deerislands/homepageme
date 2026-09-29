@@ -7,13 +7,13 @@
 請確認你目前操作的專案根目錄是：
 
 ```bash
-/Users/koichi/Desktop/VScode/資料
+/Users/user/Desktop/VScode/資料
 ```
 
 也就是執行 `pwd` 時，應該看到：
 
 ```bash
-/Users/koichi/Desktop/VScode/資料
+/Users/user/Desktop/VScode/資料
 ```
 
 ## 如何啟動專案
@@ -21,7 +21,7 @@
 ### 1. 進入專案資料夾
 
 ```bash
-cd /Users/koichi/Desktop/VScode/資料
+cd /Users/user/Desktop/VScode/資料
 ```
 
 ### 2. 安裝依賴
@@ -74,7 +74,7 @@ pwd
 正確結果應為：
 
 ```bash
-/Users/koichi/Desktop/VScode/資料
+/Users/user/Desktop/VScode/資料
 ```
 
 再確認是否有 `app` 資料夾：
